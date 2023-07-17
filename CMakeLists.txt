@@ -7,6 +7,7 @@ add_executable(TietoGra
     game.cpp
     production.cpp
     status.cpp
+    map.cpp
     main.cpp
 )
 
