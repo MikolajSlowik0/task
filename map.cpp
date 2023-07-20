@@ -21,7 +21,7 @@ void map::load_map()
 {
 	std::string map_size = load_file("../mapa.txt");
 
-	//substracting '0' to get correct value corresponding to a digit
+	//subtracting '0' to get correct value corresponding to a digit
 	std::string size_X = std::to_string(map_size[0] - '0') + std::to_string(map_size[1] - '0');
 	std::string size_Y = std::to_string(map_size[3] - '0') + std::to_string(map_size[4] - '0');
 

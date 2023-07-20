@@ -1,14 +1,14 @@
 #include "game.h"
 
 //splitting command into required format
-std::vector <std::string> splitstdstring(std::string str, std::string delimiter)
+std::vector <std::string> splitstdstring(const std::string & str, const std::string & delimiter)
 {
 	std::vector<std::string> splitted_command;
 
-	int start = 0;
-	int end = str.find(delimiter);
+	size_t start = 0;
+	size_t end = str.find(delimiter);
 
-	while (end != -1) 
+	while (end != std::string::npos)
 	{
 		splitted_command.push_back(str.substr(start, end - start));
 		start = end + delimiter.size();

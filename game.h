@@ -73,4 +73,4 @@ struct Command
 	int ID;
 };
 
-std::vector <std::string> splitstdstring(std::string str, std::string delimiter = " ");
+std::vector <std::string> splitstdstring(const std::string & str, const std::string & delimiter = " ");
